@@ -1,21 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
-    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
- 
-    <title>王凯霆的博客</title>
-    <link rel="icon" href="http://file.qqwkt.tk:88/img/logo.jpg">
-    <style>
-        html,body,iframe{width: 100%;height: 100%;padding: 0;margin: 0}
-        #wrap{width: 100%;height: 100%;}
-        iframe{border: none;}
- 
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaiting的导航页</title>
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/jQuery3.5.1.js"></script>
 </head>
-<body style="overflow-x:hidden;overflow-y:hidden">
-<div id="wrap">
-    <iframe src="https://www.youtube.com"></iframe>
-</div>
+
+<body>
+    <!-- 头部 -->
+    <header class="core hd">
+        <!-- 时间 -->
+        <h1 class="time_econd"></span></h1>
+        <h3><span class="time_moon"></span>&nbsp;&nbsp;<span id="clock"></span>&#128513;</h3>
+        <!-- 搜索栏 -->
+        <div class="bing style">
+            <form action="https://cn.bing.com/search" target="_self" method="get"  >
+                <i></i>
+                <input type="text" id="search-input" name="q" size="30" placeholder="bing一下吧：" autofocus>
+                <input type="submit">
+            </form>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <section class="core main style">
+        <!-- 头像 -->
+        <div class="tx">
+            <!-- https://q1.qlogo.cn/g?b=qq&nk=1809185784&s=100 -->
+            <img src="./assets/images/tx.jpg" alt="摸摸kaiting" title="摸摸kaiting">
+        </div>
+        <!-- 姓名 个签 -->
+        <div class="name">
+            <h2>kaiting的导航页</h2>
+            <h4 id="txt"></h4>
+        </div>
+        <!-- 图标 （img里面的是透明图是用来转换超链接） -->
+        <div class="ico_link">
+            <ul>
+                <li><a href="mz.html" rel="nofollow" target="_blank" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="博客" title="博客"></a></li>
+                <li><a href="mz.html" rel="nofollow" target="_blank" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="MC服务器官网" title="MC服;务器官网"></a></li>
+                <li><a href="mailto:mail@qqwkt.gq" rel="nofollow" target="_blank" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="邮箱" title="邮箱"></a></li>
+                <li><a href="https://space.bilibili.com/619007441" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="bilibili" title="bilibili"></a></li>
+            </ul>
+        </div>
+        <!-- 介绍 -->
+        <div class="introduce">
+            <p id="type"></p>
+        </div>
+        <!-- 滑动效果 -->
+        <p class="slide">&#xeb6d;</p>
+        <div class="website">
+            <a href="mz.html" rel="nofollow" target="_blank" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">没做完</a>
+            <a href="mz.html" rel="nofollow" target="_blank" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">没做完</a>
+            <a href="mz.html" rel="nofollow" target="_blank" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">没做完</a>
+            <a href="mz.html" rel="nofollow" target="_blank" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">没做完</a>
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="core copy">
+        <p><a href="" target="_blank" rel="noopener noreferrer"></a></p>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".slide").click(function () {
+                $(".website").slideToggle("slow");
+            })
+        })
+    </script>
+    <script src="./assets/js/time.js"></script>
+    <script src="./assets/js/text.js"></script>
+    <script src="./assets/js/fireworks.js"></script>
 </body>
+
 </html>
